@@ -1,0 +1,147 @@
+.big-logo{
+	margin-top: 123px;
+}
+
+.header-bar{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.top-margin{
+	margin-top: 20px;
+}
+.cost-item{
+	margin: 15px;
+}
+.dark{
+	height: 37px;
+	background-color: #111111;
+}
+.bright{
+	height:100px;
+	background-color: #fff;
+}
+
+#logo-img{
+	width: 375px;
+}
+
+#text_back{
+	display: none;
+}
+#show_text{
+	height: auto;
+}
+.show_bar{
+    background-color: white;
+    font-family: Arial;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0;
+    margin-top:13px;
+    margin-left:10px;
+    text-align: center;
+}
+.show_bar textarea{
+	height: 120px;
+}
+.show_bar #status{
+	height: 120px;
+}
+/* #droptarget {
+    background-color: white;
+    font-family: Arial;
+    width: 490px;
+    height: 120px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0;
+    margin-top:13px;
+    margin-left:10px;
+    text-align: center;
+}
+ */
+#status {
+    /*padding: 10px;
+    height:120px; */
+    color: grey;
+}
+
+.highlighted {
+    border-color: green;
+}
+
+.validtarget {
+    border-color: darkgrey;
+}
+
+#preview {
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.obj {
+    width: 200px;
+    height: auto;
+    border-radius: 2em;
+}
+
+.score_ok{
+	background-color: #66CDAA;
+	color: #fff;
+}
+.score_bad{
+	background-color: #FF7F50;
+	color: #fff;
+
+}
+
+.jinzhi{
+	line-height: 26px;
+	color:#fff;
+	border:thin;
+	border-radius:10px;
+	padding:4px;
+	background-color: #fb654a;
+}
+.jinzhi2{
+	line-height: 26px;
+	color:#fff;
+	border:thin;
+	border-radius:10px;
+	padding:4px;
+	background-color: #fb654a;
+}
+.itemBar{
+	margin-top:20px;
+}
+.info{
+	display:inline-block;
+	width:100%;
+}
+.my-block{
+	display: inline-block;
+}
+.item-header{
+	background-color: #966;
+	color : #fff;
+	line-height: 30px;
+}
+.item-bar{
+	background-color: #d9534f;
+	padding-bottom:  5px;
+}
+.item-bar>p{
+	padding-left: 5px;
+	color: #fff;
+}
+.item-content{
+	padding-left: 5px;
+}

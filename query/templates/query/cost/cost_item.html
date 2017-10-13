@@ -1,0 +1,12 @@
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 cost_item">
+
+	<div class="panel panel-{{cost_item.class}}" style="cursor:pointer;">
+		<div class="panel-heading">需消费</div>
+		<div class="panel-body ">
+			<h1>{{cost_item.num|default:20}}字</h1>
+		</div>
+	</div>
+	<div class="">
+		<a class="btn btn-{{cost_item.command_class}} col-lg-8" href="#">{{cost_item.command}}</a>
+	</div>
+</div>

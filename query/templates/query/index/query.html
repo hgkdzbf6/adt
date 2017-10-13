@@ -1,0 +1,15 @@
+{% extends "../common/base.html" %}
+
+{% block content %}
+	{% include "../query/contentBar.html" %}
+	{% include "../query/detail.html" %}
+	<div class="info col-xs-12 row">
+	{% include "../query/score.html" %}
+	{% include "../query/hint.html" %}
+	</div>
+	<div class="info">
+	{% for vo in list %}
+		{% include "../query/item.html" %}
+	{% endfor %}
+	</div> 
+{% endblock %} 

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADT广告通</title>
+<script type="text/javascript" src="/static/query/js/jquery-3.2.1.min.js"></script>
+{% load static %}
+<link type="text/css" rel="stylesheet" href="/static/query/css/reset.css">
+<link type="text/css" rel="stylesheet" href="/static/query/bootstrap/css/bootstrap.css">
+<script src="/static/query/bootstrap/js/bootstrap.js"></script>
+<link type="text/css" rel="stylesheet" href="/static/query/css/styles.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="row header-bar">
+    	<div class='col-xs-12'>
+			<div class='col-lg-3 col-md-4 col-sm-12 col-xs-12' >
+			   <img src="/static/query/pic/logo2.png"></img>
+			</div>
+			<div class="col-xs-7 col-md-6 col-sm-12 col-xs-12">
+			    <ul class="nav nav-pills nav-justified">
+				    <li role="presentation" class="active"><a href="#">文字</a></li>
+				    <li role="presentation"><a href="#">图片</a></li>
+				    <li role="presentation"><a href="#">链接</a></li>
+				    <li role="presentation"><a href="#">视频</a></li>
+			    </ul>
+				<div class="">
+					<form role="form" class="row"  action="/query/" method='post' >
+				    	{% csrf_token %}
+				        <input class="col-xs-9 form-control" style="width:75%;" name='upbar_text' id='text' type="text" 
+				         placeholder="Search" value="{{rawText}}">
+				        <button class="btn btn-primary col-xs-3" type="submit" >审核</button>
+				    </form>
+				</div>
+			</div>
+
+				{% include "../common/login.html" %}
+			<div class='col-lg-2 col-md-2 col-sm-12 col-xs-12'>
+			</div>
+		</div>
+    	{% block content %}
+    	{% endblock %} 
+	</div>
+</div>
+<!-- <script src="/static/query/js/query.js"></script> -->
+</body>
+</html>
